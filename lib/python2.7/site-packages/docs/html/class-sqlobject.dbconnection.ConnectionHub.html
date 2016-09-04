@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+  <h1 class="pudge-member-page-heading">
+    <tt>ConnectionHub</tt>
+  </h1>
+  <h4 class="pudge-member-page-subheading">
+    This object serves as a hub for connections, so that you can pass
+in a ConnectionHub to a SQLObject subclass as though it was a
+connection, but actually bind a real database connection later.
+You can also bind connections on a per-thread basis.
+  </h4>
+  <p class="pudge-member-parent-link">
+    <small>
+    The ConnectionHub class is accessible via the
+    <a href="module-sqlobject.dbconnection.html">
+      <tt>sqlobject.dbconnection</tt>
+    </a> module.
+    </small>
+  </p>
+  <div id="pudge-section-nav">
+  <ul>
+    <li>
+      <a href="#attributes" class="pudge-section-link">
+        Attributes (1)
+      </a>
+    </li><li>
+      <a href="#methods" class="pudge-section-link">
+        Methods (8)
+      </a>
+    </li>
+    <li>
+      <a href="sqlobject/dbconnection.py.html?f=875&amp;l=974#875" class="pudge-section-link">
+        Source
+      </a>
+    </li>
+  </ul>
+  </div>
+  <div style="clear: left"></div>
+  <div class="rst pudge-module-doc">
+    <p>You must hang onto the original ConnectionHub instance, as you
+cannot retrieve it again from the class or instance.</p>
+<p>To use the hub, do something like:</p>
+<pre class="literal-block">
+hub = ConnectionHub()
+class MyClass(SQLObject):
+    _connection = hub
+
+hub.threadConnection = connectionFromURI('...')
+</pre>
+  </div>
+  <hr>
+    <a name="attributes"></a>
+    <h2>Attributes</h2>
+    <div class="pudge-member name">
+    <a name="threadConnection"></a>
+    <h4 class="pudge-member-name"><span class="prefix">a</span>
+      <tt><a href="class-sqlobject.dbconnection.ConnectionHub.html#threadConnection" class="pudge-obj-link">threadConnection</a></tt></h4>
+    <div class="pudge-section rst">
+      <pre>&lt;property object at 0xb532c5c></pre>
+    </div>
+  </div>
+    <a name="methods"></a>
+    <h2>Methods</h2>
+    <div class="pudge-member routine alias">
+    <a name="__format__"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.ConnectionHub.html#__format__" class="pudge-obj-link">__format__</a>(...)</tt>
+      <a href="__builtin__.py.html" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    <p class="pudge-member-blurb">
+      default object formatter
+    </p>
+    </div>
+  </div><div class="pudge-member routine alias">
+    <a name="__subclasshook__"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.ConnectionHub.html#__subclasshook__" class="pudge-obj-link">__subclasshook__</a>(...)</tt>
+      <a href="None.html" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    <p class="pudge-member-blurb">
+      Abstract classes can override this to customize issubclass().
+    </p>
+    <p>This is invoked early on by abc.ABCMeta.__subclasscheck__().
+It should return True, False or NotImplemented.  If it returns
+NotImplemented, the normal algorithm is used.  Otherwise, it
+overrides the normal algorithm (and the outcome is cached).</p>
+    </div>
+  </div><div class="pudge-member routine alias">
+    <a name="__sizeof__"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.ConnectionHub.html#__sizeof__" class="pudge-obj-link">__sizeof__</a>(...)</tt>
+      <a href="__builtin__.py.html" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    <p class="pudge-member-blurb">
+      __sizeof__() -> int
+size of object in memory, in bytes
+    </p>
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="__init__"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.ConnectionHub.html#__init__" class="pudge-obj-link">__init__</a>(self)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=896&amp;l=898#896" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="__get__"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.ConnectionHub.html#__get__" class="pudge-obj-link">__get__</a>(self, obj, type=None)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=899&amp;l=906#899" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="__set__"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.ConnectionHub.html#__set__" class="pudge-obj-link">__set__</a>(self, obj, value)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=907&amp;l=909#907" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="getConnection"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.ConnectionHub.html#getConnection" class="pudge-obj-link">getConnection</a>(self)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=910&amp;l=920#910" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="doInTransaction"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.ConnectionHub.html#doInTransaction" class="pudge-obj-link">doInTransaction</a>(self, func, *args, **kw)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=921&amp;l=961#921" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    <p class="pudge-member-blurb">
+      This routine can be used to run a function in a transaction,
+rolling the transaction back if any exception is raised from
+that function, and committing otherwise.
+    </p>
+    <p>Use like:</p>
+<pre class="literal-block">
+sqlhub.doInTransaction(process_request, os.environ)
+</pre>
+<p>This will run <tt class="docutils literal">process_request(os.environ)</tt>.  The return
+value will be preserved.</p>
+    </div>
+  </div>
+  <p>
+    <small>
+    See 
+    <a href="sqlobject/dbconnection.py.html?f=875&amp;l=974#875" title="sqlobject/dbconnection.py:875">the source</a>
+    for more information.
+    </small>
+  </p>

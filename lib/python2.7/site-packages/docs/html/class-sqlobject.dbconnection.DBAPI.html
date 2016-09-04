@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+  <h1 class="pudge-member-page-heading">
+    <tt>DBAPI</tt>
+  </h1>
+  <h4 class="pudge-member-page-subheading">
+    Subclass must define a 
+    <cite>makeConnection()</cite>
+   method, which
+returns a newly-created connection object.
+  </h4>
+  <p class="pudge-member-parent-link">
+    <small>
+    The DBAPI class is accessible via the
+    <a href="module-sqlobject.dbconnection.html">
+      <tt>sqlobject.dbconnection</tt>
+    </a> module.
+    </small>
+  </p>
+  <div id="pudge-section-nav">
+  <ul>
+    <li>
+      <a href="#attributes" class="pudge-section-link">
+        Attributes (1)
+      </a>
+    </li><li>
+      <a href="#methods" class="pudge-section-link">
+        Methods (34)
+      </a>
+    </li>
+    <li>
+      <a href="sqlobject/dbconnection.py.html?f=307&amp;l=705#307" class="pudge-section-link">
+        Source
+      </a>
+    </li>
+  </ul>
+  </div>
+  <div style="clear: left"></div>
+  <div class="rst pudge-module-doc">
+    <p><tt class="docutils literal">queryInsertID</tt> must also be defined.</p>
+  </div>
+  <hr>
+    <a name="attributes"></a>
+    <h2>Attributes</h2>
+    <div class="pudge-member name">
+    <a name="dbName"></a>
+    <h4 class="pudge-member-name"><span class="prefix">a</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#dbName" class="pudge-obj-link">dbName</a></tt></h4>
+    <div class="pudge-section rst">
+      <pre>None</pre>
+    </div>
+  </div>
+    <a name="methods"></a>
+    <h2>Methods</h2>
+    <div class="pudge-member routine ">
+    <a name="oldUri"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#oldUri" class="pudge-obj-link">oldUri</a>(self)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=91&amp;l=110#91" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="uri"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#uri" class="pudge-obj-link">uri</a>(self)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=111&amp;l=131#111" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="connectionFromOldURI"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#connectionFromOldURI" class="pudge-obj-link">connectionFromOldURI</a>(cls, uri)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=132&amp;l=135#132" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="connectionFromURI"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#connectionFromURI" class="pudge-obj-link">connectionFromURI</a>(cls, uri)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=136&amp;l=139#136" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="soClassAdded"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#soClassAdded" class="pudge-obj-link">soClassAdded</a>(self, soClass)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=229&amp;l=241#229" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    <p class="pudge-member-blurb">
+      This is called for each new class; we use this opportunity
+to create an instance method that is bound to the class
+and this connection.
+    </p>
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="expireAll"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#expireAll" class="pudge-obj-link">expireAll</a>(self)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=242&amp;l=250#242" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    <p class="pudge-member-blurb">
+      Expire all instances of objects for this connection.
+    </p>
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="__init__"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#__init__" class="pudge-obj-link">__init__</a>(self, **kw)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=318&amp;l=323#318" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="getConnection"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#getConnection" class="pudge-obj-link">getConnection</a>(self)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=332&amp;l=349#332" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="releaseConnection"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#releaseConnection" class="pudge-obj-link">releaseConnection</a>(self, conn, explicit=False)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=350&amp;l=384#350" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="printDebug"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#printDebug" class="pudge-obj-link">printDebug</a>(self, conn, s, name, type='query')</tt>
+      <a href="sqlobject/dbconnection.py.html?f=385&amp;l=402#385" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="query"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#query" class="pudge-obj-link">query</a>(self, s)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=413&amp;l=415#413" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="queryAll"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#queryAll" class="pudge-obj-link">queryAll</a>(self, s)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=426&amp;l=428#426" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="queryAllDescription"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#queryAllDescription" class="pudge-obj-link">queryAllDescription</a>(self, s)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=443&amp;l=445#443" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="queryOne"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#queryOne" class="pudge-obj-link">queryOne</a>(self, s)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=456&amp;l=458#456" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="transaction"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#transaction" class="pudge-obj-link">transaction</a>(self)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=464&amp;l=466#464" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="queryInsertID"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#queryInsertID" class="pudge-obj-link">queryInsertID</a>(self, soInstance, id, names, values)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=467&amp;l=469#467" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="iterSelect"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#iterSelect" class="pudge-obj-link">iterSelect</a>(self, select)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=470&amp;l=473#470" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="accumulateSelect"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#accumulateSelect" class="pudge-obj-link">accumulateSelect</a>(self, select, *expressions)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=474&amp;l=484#474" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    <p class="pudge-member-blurb">
+      Apply an accumulate function(s) (SUM, COUNT, MIN, AVG, MAX, etc...)
+to the select object.
+    </p>
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="queryForSelect"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#queryForSelect" class="pudge-obj-link">queryForSelect</a>(self, select)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=485&amp;l=487#485" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="createIndexSQL"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#createIndexSQL" class="pudge-obj-link">createIndexSQL</a>(self, soClass, index)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=505&amp;l=507#505" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="createTable"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#createTable" class="pudge-obj-link">createTable</a>(self, soClass)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=508&amp;l=513#508" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="createReferenceConstraints"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#createReferenceConstraints" class="pudge-obj-link">createReferenceConstraints</a>(self, soClass)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=514&amp;l=522#514" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="createSQL"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#createSQL" class="pudge-obj-link">createSQL</a>(self, soClass)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=523&amp;l=539#523" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="createTableSQL"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#createTableSQL" class="pudge-obj-link">createTableSQL</a>(self, soClass)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=540&amp;l=546#540" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="createColumns"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#createColumns" class="pudge-obj-link">createColumns</a>(self, soClass)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=547&amp;l=552#547" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="createReferenceConstraint"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#createReferenceConstraint" class="pudge-obj-link">createReferenceConstraint</a>(self, soClass, col)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=553&amp;l=555#553" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="createColumn"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#createColumn" class="pudge-obj-link">createColumn</a>(self, soClass, col)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=556&amp;l=558#556" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="dropTable"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#dropTable" class="pudge-obj-link">dropTable</a>(self, tableName, cascade=False)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=559&amp;l=561#559" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="clearTable"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#clearTable" class="pudge-obj-link">clearTable</a>(self, tableName)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=562&amp;l=568#562" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="createBinary"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#createBinary" class="pudge-obj-link">createBinary</a>(self, value)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=569&amp;l=575#569" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    <p class="pudge-member-blurb">
+      Create a binary object wrapper for the given database.
+    </p>
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="sqlrepr"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#sqlrepr" class="pudge-obj-link">sqlrepr</a>(self, v)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=671&amp;l=673#671" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="__del__"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#__del__" class="pudge-obj-link">__del__</a>(self)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=674&amp;l=676#674" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="close"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#close" class="pudge-obj-link">close</a>(self)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=677&amp;l=699#677" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    </div>
+  </div><div class="pudge-member routine ">
+    <a name="createEmptyDatabase"></a>
+    <h4 class="pudge-member-name"><span class="prefix">f</span>
+      <tt><a href="class-sqlobject.dbconnection.DBAPI.html#createEmptyDatabase" class="pudge-obj-link">createEmptyDatabase</a>(self)</tt>
+      <a href="sqlobject/dbconnection.py.html?f=700&amp;l=705#700" title="View Source">...</a>
+    </h4>
+    <div class="pudge-section rst">
+    <p class="pudge-member-blurb">
+      Create an empty database.
+    </p>
+    </div>
+  </div>
+  <p>
+    <small>
+    See 
+    <a href="sqlobject/dbconnection.py.html?f=307&amp;l=705#307" title="sqlobject/dbconnection.py:307">the source</a>
+    for more information.
+    </small>
+  </p>
