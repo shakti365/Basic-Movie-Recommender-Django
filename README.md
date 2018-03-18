@@ -4,10 +4,18 @@ A basic movie recommendation web-app is created using Django framework. The app 
 
 ## Getting Started
 
-Clone the repository in a local directory and activate the virtual environment
+Clone the repository in a local directory and install virtual environment
 ```
-source bin/activate
+pip install virtualenv
 ```
+
+Create a new python2 virtual environment, activate and install required packages
+```
+virtualenv -p python2 env
+source env/bin/activate
+pip install -r requirements.txt
+```
+
 
 Navigate to the ```blogpost``` directory and run the server
 ```
