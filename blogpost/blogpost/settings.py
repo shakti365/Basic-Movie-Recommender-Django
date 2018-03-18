@@ -56,7 +56,7 @@ ROOT_URLCONF = 'blogpost.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/shivam/Documents/Documents/DjangoDev/blogpost/blogpost/templates',],
+        'DIRS': ['./templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,8 +121,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/home/shivam/Documents/Documents/DjangoDev/blogpost/blogpost/static/static_root'
+STATIC_ROOT = './static/static_root'
 
 STATICFILES_DIRS = (
-        '/home/shivam/Documents/Documents/DjangoDev/blogpost/blogpost/static/static_dirs',
+        './static/static_dirs',
     )
